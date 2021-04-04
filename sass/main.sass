@@ -1,0 +1,78 @@
+@import '_header', '_description'
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap')
+
+$smartphone: "(max-width: 480px)"
+$tablets: "(min-width: 480px) and (max-width: 720px)"
+$desktop: "(max-width: 1024px)"
+
+
+body
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  background: rgba(0,0,0,0.9)
+  font-family: 'Special Elite', cursive
+
+@media #{$tablets}
+  /*body
+    background: #fff*/
+    
+  header
+    position: relative
+
+    .header_container
+      
+      .header_title
+        position: relative
+        top: -20px
+  
+  main
+    height: 420px
+
+    .main_container
+      position: relative
+      top: 220px
+      
+      .main_slider img
+        width: 110px
+        height: 110px
+
+      .main_description
+        font-size: 3em
+
+@media #{$smartphone}
+  /*body
+    background: #00f*/
+
+  header
+    position: relative
+
+    .header_container
+      width: 90%
+      height: 120px
+
+      .header_title
+        position: relative
+        top: -10px
+        font-size: 5px
+      
+      .header_logo
+        position: relative
+        width: 120px
+        height: 120px
+  
+  main
+    height: 320px
+
+    .main_container
+      position: relative
+      top: -80px
+      height: 10vh
+      font-size: 3px
+      
+      .main_slider img
+        height: 110px
+        width: 110px
+
+      .main_description
+        
