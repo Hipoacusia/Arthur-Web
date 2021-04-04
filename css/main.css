@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+  header .header_container {
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    width: 90%;
+    height: 40vh;
+    justify-content: space-between;
+    align-items: center;
+    background: url("../Imagenes/SkullFRa.jpg") repeat center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9), 0 2px 20px rgba(0, 0, 0, 0.9);
+    border-radius: 15px; }
+    header .header_container .header_title {
+      position: relative;
+      top: 50px;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      margin: auto;
+      text-align: center;
+      text-shadow: 0 0 10px #000, 0 0 15px #000, 0 0 20px #000;
+      font-size: 10px;
+      color: #f5f5fc; }
+      header .header_container .header_title h1 {
+        font-size: 4em;
+        text-width: 10px; }
+      header .header_container .header_title p {
+        font-size: 2em;
+        text-width: 10px; }
+      header .header_container .header_title a {
+        color: #f5f5fc;
+        margin: 20px;
+        width: 25%;
+        height: 25%;
+        font-size: 3.5em; }
+    header .header_container .header_logo {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
+      height: 220px;
+      margin: auto; }
+      header .header_container .header_logo img {
+        position: absolute;
+        left: -20px;
+        margin: auto;
+        width: 100%;
+        height: 100%; }
+
+main {
+  display: flex;
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center; }
+  main::before {
+    content: '';
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    background: url(../Imagenes/FondoHabitacion.jpg) center;
+    background-size: 100%;
+    border-radius: 15px;
+    opacity: 0.25; }
+  main .main_container {
+    position: relative;
+    top: 80px;
+    width: 80%;
+    height: 90vh;
+    background-size: 100%;
+    border-radius: 15px;
+    font-size: 5px; }
+    main .main_container .main_slider {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.5); }
+      main .main_container .main_slider img {
+        height: 320px;
+        width: 350px; }
+    main .main_container .main_description {
+      font-size: 5em;
+      color: #fff;
+      text-align: center; }
+      main .main_container .main_description p {
+        text-align: center;
+        opacity: 1; }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.9);
+  font-family: 'Special Elite', cursive; }
+
+@media (min-width: 480px) and (max-width: 720px) {
+  /*body
+    background: #fff*/
+  header {
+    position: relative; }
+    header .header_container .header_title {
+      position: relative;
+      top: -20px; }
+  main {
+    height: 420px; }
+    main .main_container {
+      position: relative;
+      top: 220px; }
+      main .main_container .main_slider img {
+        width: 110px;
+        height: 110px; }
+      main .main_container .main_description {
+        font-size: 3em; } }
+
+@media (max-width: 480px) {
+  /*body
+    background: #00f*/
+  header {
+    position: relative; }
+    header .header_container {
+      width: 90%;
+      height: 120px; }
+      header .header_container .header_title {
+        position: relative;
+        top: -10px;
+        font-size: 5px; }
+      header .header_container .header_logo {
+        position: relative;
+        width: 120px;
+        height: 120px; }
+  main {
+    height: 320px; }
+    main .main_container {
+      position: relative;
+      top: -80px;
+      height: 10vh;
+      font-size: 3px; }
+      main .main_container .main_slider img {
+        height: 110px;
+        width: 110px; } }
